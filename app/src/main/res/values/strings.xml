@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Custom app</string>
+    <string name="hardcodestring">coolValue</string>
+    <string name="click_button">Submit</string>
+    <string name="textBox">Enter your name</string>
+    <string name="color_hint">Type your favorite thing</string>
+
+</resources>
