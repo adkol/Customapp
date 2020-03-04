@@ -67,3 +67,30 @@
         app:layout_constraintTop_toTopOf="@+id/responseEditText"
         />
 
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginRight="280dp"
+        android:src="@drawable/giannis"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="165dp"
+        android:layout_marginRight="288dp"
+        android:src="@drawable/luka"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginRight="280dp"
+        android:src="@drawable/poole"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
