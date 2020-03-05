@@ -95,6 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"
+        android:onClick="onC"
         android:layout_marginBottom="464dp"
         android:textAllCaps="true"
         android:textColor="#318214"

@@ -2,12 +2,14 @@ package com.kolliadit.lifecycle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-
     SharedPreferences pref ; // 0 - for private mode
     SharedPreferences.Editor editor;
     TextView displayText;
@@ -107,6 +109,26 @@ public class MainActivity extends AppCompatActivity {
         editor.putInt("6", scores[6]);
         editor.commit();
         destroyText.setText("Destroy: "+scores[6]+", "+thissession[6]);
+
+    }
+    public void onC (View view){
+        for(int x=0;x<7;x++)
+        {
+            scores[x]=0;
+            thissession[x]=0;
+            editor.putInt(""+x,0);
+            editor.commit();
+        }
+
+        displayText.setText("Create: "+scores[0]+", "+thissession[0]);
+        stopText.setText("Stop: "+scores[4]+", "+thissession[4]);
+        startText.setText("Start: "+scores[1]+", "+thissession[1]);
+        pauseText.setText("Pause: "+scores[3]+", "+thissession[3]);
+        restartText.setText("Restart: "+scores[5]+", "+thissession[5]);
+        destroyText.setText("Destroy: "+scores[6]+", "+thissession[6]);
+        resumeText.setText("Resume: "+scores[2]+", "+thissession[2]);
+
+
 
     }
 
