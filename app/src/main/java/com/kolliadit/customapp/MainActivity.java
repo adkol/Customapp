@@ -49,7 +49,7 @@ public class MainActivity extends FragmentActivity {
 
     }
     public void onC(View v) {
-                System.out.println(radio);
+
                 int selectedId = radio.getCheckedRadioButtonId();
                 val = (RadioButton) findViewById(selectedId);
                 String text = (String)( val.getResources().getResourceEntryName(selectedId));
